@@ -53,9 +53,9 @@ if (import.meta.main) {
     console.log(data);
   } catch (error) {
     if (error instanceof Error) {
-      console.log("An error occurred:", error.message);
+      console.error(`%c⚠️ An error occurred: ${error.message}`, "color:red; font-weight: bold");
     } else {
-      console.log("An unknown error occurred");
+      console.error("%c⚠️ An unknown error occurred", "color:red; font-weight: bold");
     }
   }
 }
